@@ -8,3 +8,7 @@
 .debuginfo .content {
   display: none;
 }
+.column {
+     width:300px;
+     float:left
+}

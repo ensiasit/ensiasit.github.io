@@ -1,0 +1,400 @@
+Uri: https://ctf.dragonsector.pl/
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\index.htm
+Content Type: text/html
+
+Uri: https://ctf.dragonsector.pl/css/bootstrap.min.css
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://ctf.dragonsector.pl/css/signin.css
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\css\signin.css
+Content Type: text/css
+
+Uri: https://ctf.dragonsector.pl/css/dropmenu.css
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\css\dropmenu.css
+Content Type: text/css
+
+Uri: https://ctf.dragonsector.pl/css/debuginfo.css
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\css\debuginfo.css
+Content Type: text/css
+
+Uri: https://ctf.dragonsector.pl/css/extra.css
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\css\extra.css
+Content Type: text/css
+
+Uri: https://ctf.dragonsector.pl/?rules
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\index-1.htm
+Content Type: text/html
+
+Uri: https://ctf.dragonsector.pl/?news
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\index-2.htm
+Content Type: text/html
+
+Uri: https://ctf.dragonsector.pl/?scoreboard
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\index-3.htm
+Content Type: text/html
+
+Uri: https://ctf.dragonsector.pl/?activity
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\index-4.htm
+Content Type: text/html
+
+Uri: https://ctf.dragonsector.pl/?signin
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\index-5.htm
+Content Type: text/html
+
+Uri: https://ctf.dragonsector.pl/?signup
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\index-6.htm
+Content Type: text/html
+
+Uri: https://ctf.dragonsector.pl/art/logo/CutDown_Teaser.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\logo\CutDown_Teaser.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/logo/Dragon_mini_right.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\logo\Dragon_mini_right.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/logo_sumologic.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\logo_sumologic.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/logo_standardchartered.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\logo_standardchartered.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/logo_samsung.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\logo_samsung.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/logo_google.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\logo_google.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/logo_pwning.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\logo_pwning.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/ds_beztla_small.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\ds_beztla_small.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/js/jquery.min.js
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\js\jquery.min.js
+Content Type: application/javascript
+
+Uri: https://ctf.dragonsector.pl/js/bootstrap.min.js
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\js\bootstrap.min.js
+Content Type: application/javascript
+
+Uri: https://ctf.dragonsector.pl/js/extra.js
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\js\extra.js
+Content Type: application/javascript
+
+Uri: https://ctf.dragonsector.pl/fonts/glyphicons-halflings-regular.eot
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\fonts\glyphicons-halflings-regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://ctf.dragonsector.pl/fonts/glyphicons-halflings-regular.eot?
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\fonts\glyphicons-halflings-regular-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://ctf.dragonsector.pl/fonts/glyphicons-halflings-regular.woff2
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\fonts\glyphicons-halflings-regular.bin
+Content Type: application/octet-stream
+
+Uri: https://ctf.dragonsector.pl/fonts/glyphicons-halflings-regular.woff
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\fonts\glyphicons-halflings-regular.woff
+Content Type: application/font-woff
+
+Uri: https://ctf.dragonsector.pl/fonts/glyphicons-halflings-regular.ttf
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\fonts\glyphicons-halflings-regular-1.bin
+Content Type: application/octet-stream
+
+Uri: https://ctf.dragonsector.pl/fonts/glyphicons-halflings-regular.svg
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\fonts\glyphicons-halflings-regular.svg
+Content Type: image/svg+xml
+
+Uri: https://ctf.dragonsector.pl/art/parallax_bg/parallax2_NOparallax.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\parallax_bg\parallax2_NOparallax.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/tile007.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\tile007.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/tile006.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\tile006.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/tile008.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\tile008.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/sep_h_dark.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\sep_h_dark.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/map_parchemin_dragonCTF_48x48_D.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\map_parchemin_dragonCTF_48x48_D.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/tile004.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\tile004.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/map_parchemin_dragonCTF_48x48_D_solved.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\map_parchemin_dragonCTF_48x48_D_solved.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/green_tile004.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\green_tile004.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/banner_tile001.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\banner_tile001.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/banner_tile000.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\banner_tile000.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/banner_tile002.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\banner_tile002.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/banner_green_tile001.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\banner_green_tile001.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/banner_green_tile000.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\banner_green_tile000.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/banner_green_tile002.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\banner_green_tile002.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/runeBlack_slabOutline_035.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\runeBlack_slabOutline_035.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/map/map_final.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\map\map_final.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/map/icons.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\map\icons.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/art/map/icons-green.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\art\map\icons-green.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/?scoreboard&show=all
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\index-7.htm
+Content Type: text/html
+
+Uri: https://ctf.dragonsector.pl/icons/US.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\US.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/PL.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\PL.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/TW.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\TW.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/DE.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\DE.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/RU.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\RU.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/VN.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\VN.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/IT.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\IT.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/HU.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\HU.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/FR.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\FR.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/UA.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\UA.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/NO.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\NO.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/CH.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\CH.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/KR.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\KR.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/RO.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\RO.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/CN.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\CN.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/PT.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\PT.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/AG.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\AG.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/GB.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\GB.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/AT.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\AT.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/SE.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\SE.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/IL.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\IL.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/IE.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\IE.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/CG.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\CG.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/CZ.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\CZ.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/BR.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\BR.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/DK.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\DK.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/IN.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\IN.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/HK.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\HK.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/JP.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\JP.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/HR.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\HR.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/MK.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\MK.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/AU.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\AU.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/SI.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\SI.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/GR.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\GR.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/AF.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\AF.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/ES.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\ES.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/MX.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\MX.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/KE.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\KE.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/CI.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\CI.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/MA.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\MA.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/KZ.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\KZ.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/NG.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\NG.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/ID.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\ID.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/CY.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\CY.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/PH.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\PH.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/AR.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\AR.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/TR.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\TR.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/CX.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\CX.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/CA.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\CA.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/MN.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\MN.png
+Content Type: image/png
+
+Uri: https://ctf.dragonsector.pl/icons/TN.png
+File Name: C:\Users\AIT RAMI\Desktop\ctf.dragonsector.pl\icons\TN.png
+Content Type: image/png
+
