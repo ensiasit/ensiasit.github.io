@@ -1,0 +1,5 @@
+.dropdown-menu > li > div {
+    display: block;
+    padding: 3px 20px;
+    line-height: 1.42;`
+}

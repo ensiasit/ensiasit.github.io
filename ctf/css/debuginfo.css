@@ -1,0 +1,14 @@
+.debuginfo {
+  text-align: right;
+  padding: 5px;
+  color: gray;
+  font-size: 0.8em;
+  clear: both;
+}
+.debuginfo .content {
+  display: none;
+}
+.column {
+     width:300px;
+     float:left
+}
