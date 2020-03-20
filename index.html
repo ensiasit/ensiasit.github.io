@@ -1,160 +1,19 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		
-    <title>EITC New Members</title>
-    <LINK REL="icon" HREF="favicon.ico">
-    
-    <link href="css\bootstrap.min.css" rel="stylesheet">
-    <link href="css\signin.css" rel="stylesheet">
-    <link href="css\dropmenu.css" rel="stylesheet">
-    <link href="css\debuginfo.css" rel="stylesheet">
-    <link href="css\extra.css" rel="stylesheet">
+    <meta charset="utf-8" />
 
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="/vendors/js/p5.js"></script>
+    <script src="/vendors/js/p5.dom.min.js"></script>
+    <script src="/vendors/js/p5.sound.min.js"></script>
+    <script src="Drone.js"></script>
+    <script src="Animation.js"></script>
   </head>
-  <body role="document" class="ds-pixelated">
+  <body>
+    <div id="help-panel">Press <span id="h-key"></span> for help.</div>
 
-      <!-- Fixed navbar -->
-    <div class="ds-navbar" xclass="navbar navbar-fixed-top">
-      <div class="ds-logo-left">
-        <img src="art\logo\CutDown_Teaser.png">
-      </div>
-
-      <div id="ds-instant-news" style="visibility: hidden"></div>
-
-
-      <div class="ds-top-container hidden-xs hidden-sm">
-      	<div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right ds-navbar-ul">
-            <li class="ds-nav-left">&nbsp;</li>
-					  
-
-				
-		    <li class="ds-nav-li active">
-      <a href="index.htm" class="ds-nav" id="menu-welcome">Welcome</a>
-    </li>
-          
-        <li class="ds-nav-li ">
-      <a href="Sponsoring.htm" class="ds-nav" id="menu-sponsoring">Sponsoring</a>
-    </li>
-          
-        <li class="ds-nav-li ">
-      <a href="Media.htm" class="ds-nav" id="menu-media">Media</a>
-    </li>
-          
-          
-        <li class="ds-nav-li ">
-      <a href="Events.htm" class="ds-nav" id="menu-events">Events</a>
-    </li>
-          
-        <li class="ds-nav-li ">
-      <a href="Trainings.htm" class="ds-nav" id="menu-trainings">Trainings</a>
-    </li>
-
-    <li class="ds-nav-li ">
-      <a href="Design.htm" class="ds-nav" id="menu-design">Design</a>
-    </li>
-
-    <li class="ds-nav-li ">
-      <a href="Competitive Programming.htm" class="ds-nav" id="menu-cp">Competitive Programming</a>
-    </li>
-
-    <li class="ds-nav-li ">
-      <a href="Cyber Security.htm" class="ds-nav" id="menu-cs">Cyber Security</a>
-    </li>
-    <li class="ds-nav-right">&nbsp;</li>
-            <li class="ds-space-5em">&nbsp;</li>
-          </ul>
-        </div>
-      </div>
-      <div class="ds-horizontal-sep hidden-xs hidden-sm"></div>
-    </div>
-    <div class="ds-horizontal-sep visible-xs-block visible-sm-block"></div>
-
-    <div class="container theme-showcase" role="main">
-      <div class="ds-top-container-sm visible-xs-block visible-sm-block">
-        <ul class="">
-          
-
-				
-		    <li class="ds-nav-li active">
-			<li class="ds-nav-li active">
-      <a href="index.htm" class="ds-nav" id="menu-welcome">Welcome</a>
-    </li>
-          
-        <li class="ds-nav-li ">
-      <a href="Sponsoring.htm" class="ds-nav" id="menu-sponsoring">Sponsoring</a>
-    </li>
-          
-        <li class="ds-nav-li ">
-      <a href="Media.htm" class="ds-nav" id="menu-media">Media</a>
-    </li>
-          
-          
-        <li class="ds-nav-li ">
-      <a href="Events.htm" class="ds-nav" id="menu-events">Events</a>
-    </li>
-          
-        <li class="ds-nav-li ">
-      <a href="Trainings.htm" class="ds-nav" id="menu-trainings">Trainings</a>
-    </li>
-
-    <li class="ds-nav-li ">
-      <a href="Design.htm" class="ds-nav" id="menu-design">Design</a>
-    </li>
-
-    <li class="ds-nav-li ">
-      <a href="Competitive Programming.htm" class="ds-nav" id="menu-cp">Competitive Programming</a>
-    </li>
-
-    <li class="ds-nav-li ">
-      <a href="Cyber Security.htm" class="ds-nav" id="menu-cs">Cyber Security</a>
-    </li>
-        </ul>
-      </div>
-      <div class="ds-horizontal-sep visible-xs-block visible-sm-block"></div>
-
-    <div class="row hidden-xs hidden-sm" style="height: 30px;"></div>
-
-      
-     <div class="ds-panel ds-panel-default">
-        <div class="ds-panel-interior">
-          <div class="ds-panel-heading">
-            <div class="ds-panel-title-left">&nbsp;</div>
-            <div class="ds-panel-title-right">&nbsp;</div>
-            <div class="ds-panel-title">Welcome !!</div>
-          </div>
-
-          <div class="ds-panel-body">
-        <center>
-            <div style="margin-bottom: 3em;">
-
-              <h5><p class="ds-news-important"> 
-                
-                 Welcome to the team! We are thrilled to have you at ENSIAS IT. We know you’re going to be a valuable asset to our club and can’t wait to see what you’ll accomplish with us ! we look forward to see you on our Team Building.
-                 <br>
-                 <br>
-              </h5>
-
-            </div>
-          
-          </center>
-        
-        </div>
-        </div>
-      </div>
-
-      <div style="height: 1em;"></div>
-
-
-    </div>
-
-    <script src="js\jquery.min.js"></script>
-    <script src="js\bootstrap.min.js"></script>
-    <script src="js\extra.js"></script>
+    <script src="sketch.js"></script>
   </body>
 </html>
