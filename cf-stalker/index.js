@@ -68,26 +68,34 @@ window.onload = () => {
       .then(callback)
       .catch((err) => console.log(err));
 
-  handles.forEach((handle, idx) => {
-    fetchJsonAndExec(
-      `https://codeforces.com/api/user.info?handles=${handle}`,
-      ({ result: [{ firstName, lastName, rating }] }) =>
+  const fetchInfo = (idx) =>
+    setTimeout(
+      () =>
         fetchJsonAndExec(
-          `https://codeforces.com/api/user.status?handle=${handle}`,
-          ({ result }) => {
-            result = result.filter(({ verdict }) => verdict === "OK");
-            const solvedByDifficulties = difficulties.map((range) =>
-              countSolvedInRange(result, range)
-            );
-            tbody.innerHTML += toTableRow(
-              handle,
-              firstName,
-              lastName,
-              rating,
-              solvedByDifficulties
-            );
-          }
-        )
+          `https://codeforces.com/api/user.info?handles=${handles[idx]}`,
+          ({ result: [{ firstName, lastName, rating }] }) =>
+            fetchJsonAndExec(
+              `https://codeforces.com/api/user.status?handle=${handles[idx]}`,
+              ({ result }) => {
+                result = result.filter(({ verdict }) => verdict === "OK");
+                const solvedByDifficulties = difficulties.map((range) =>
+                  countSolvedInRange(result, range)
+                );
+                tbody.innerHTML += toTableRow(
+                  handles[idx],
+                  firstName,
+                  lastName,
+                  rating,
+                  solvedByDifficulties
+                );
+                if (++idx < handles.length) {
+                  fetchInfo(idx);
+                }
+              }
+            )
+        ),
+      250
     );
-  });
+
+  fetchInfo(0);
 };
