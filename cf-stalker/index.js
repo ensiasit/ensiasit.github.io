@@ -1,7 +1,17 @@
 window.onload = () => {
   const tbody = document.querySelector("#stalker-table").children[1];
 
-  const handles = ["assali"];
+  const handles = [
+    "assali",
+    "faridtsl",
+    "adnaneaabbar",
+    "AIT-RAMI",
+    "hoffen",
+    "Saachi",
+    "sqrtminusone",
+    "TheMenTaLisT7",
+    "hamzabht18",
+  ];
 
   const difficulties = [
     [0, 1200],
