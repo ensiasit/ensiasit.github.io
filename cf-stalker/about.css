@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #444;
+}
+
+#header {
+  position: relative;
+  height: 70px;
+  margin: 20px 0;
+}
+
+#header-left {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 70px;
+}
+
+#header-right {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: black;
+}
+
+#main {
+  padding: 0 15%;
+  margin: 20px 0;
+}
+
+#resume-table {
+  height: 200px;
+  /* margin-left: calc(50% - 250px); */
+  text-align: left;
+}
+
+#resume-table td,
+#resume-table th {
+  width: 100px;
+}
+
+#footer {
+  margin: 40px 0 20px 0;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
