@@ -3,55 +3,59 @@ const loader = document.querySelector("#loader");
 
 const table = [];
 
-const handles = Array.from(
-  new Set([
-    "assali",
-    "faridtsl",
-    "adnaneaabbar",
-    "AIT-RAMI",
-    "hoffen",
-    "Saachi",
-    "sqrtminusone",
-    "TheMenTaLisT7",
-    "hamzabht18",
-    "Lebannin",
-    "modx5",
-    "sato2000",
-    "benyazidhamza",
-    "am_Ine",
-    "meedbek",
-    "Amee",
-    "Asaad27",
-    "Smahox",
-    "titro",
-    "mosleh2020",
-    "Mr.NickName",
-  ])
-);
+const handles = [
+  { handle: "faridtsl" },
+  { handle: "adnaneaabbar" },
+  { handle: "AIT-RAMI" },
+  { handle: "hoffen" },
+  { handle: "Saachi" },
+  { handle: "sqrtminusone" },
+  { handle: "TheMenTaLisT7" },
+  { handle: "hamzabht18" },
+  { handle: "Lebannin" },
+  { handle: "modx5" },
+  { handle: "sato2000" },
+  { handle: "benyazidhamza" },
+  { handle: "am_Ine" },
+  { handle: "meedbek" },
+  { handle: "Amee" },
+  { handle: "Asaad27" },
+  { handle: "Smahox" },
+  { handle: "titro" },
+  { handle: "mosleh2020" },
+  { handle: "Mr.NickName" },
+  { handle: "D_Mind" },
+  { handle: "ensiast.aiming.4.expert", aimRating: 1600 },
+];
 
 const ranks = [
   {
     range: [0, 1200],
+    name: "newbie",
     color: "gray",
     mustSolvePercentage: [],
   },
   {
     range: [1200, 1400],
+    name: "pupil",
     color: "green",
     mustSolvePercentage: [20, 40, 20, 10, 0],
   },
   {
     range: [1400, 1600],
+    name: "specialist",
     color: "#03A89E",
     mustSolvePercentage: [10, 20, 40, 20, 10],
   },
   {
     range: [1600, 1900],
+    name: "expert",
     color: "blue",
     mustSolvePercentage: [0, 10, 20, 40, 20],
   },
   {
     range: [1900, 4000],
+    name: "cm",
     color: "#a0a",
     mustSolvePercentage: [0, 0, 10, 20, 40],
   },
@@ -67,12 +71,12 @@ const getRatingColor = (rating) => {
 
 const sum = (arr) => arr.reduce((a, b) => a + b, 0);
 
-const getSolvedAnalytics = (rating, maxRating, solved) => {
+const getSolvedAnalytics = (rating, aimRank, solved) => {
   const totalSolved = sum(solved);
-  const rankAim = ranks.find(({ range }) => inRange(range, maxRating));
+
   const solvedAnalytics = solved.map((count, idx) => ({
     bgColor:
-      (count / totalSolved) * 100 >= rankAim.mustSolvePercentage[idx]
+      (count / totalSolved) * 100 >= aimRank.mustSolvePercentage[idx]
         ? "rgba(0, 255, 0, 0.05)"
         : "rgba(255, 0, 0, 0.05)",
     count,
@@ -85,10 +89,14 @@ const getSolvedAnalytics = (rating, maxRating, solved) => {
   };
 };
 
-const toTableRow = (handle, fullName, rating, maxRating, solved) => {
+const toTableRow = ({ handle, aimRating }, rating, maxRating, solved) => {
+  var aimRank = ranks.find(({ range }) =>
+    inRange(range, aimRating || maxRating)
+  );
+  aimRank = aimRank.range[0] < 1400 ? ranks[2] : aimRank;
   const { color, totalSolved, solvedAnalytics } = getSolvedAnalytics(
     rating,
-    maxRating,
+    aimRank,
     solved
   );
   const solvedAnalyticsHTML = solvedAnalytics
@@ -104,10 +112,12 @@ const toTableRow = (handle, fullName, rating, maxRating, solved) => {
   return `
     <tr>
       <th>
-        <a style="color: ${color}" href="https://codeforces.com/profile/${handle}">${handle}</a>
+        <a style="color: ${color}" href="https://codeforces.com/profile/${handle}">
+          ${handle}
+        </a>
       </th>
-      <td>${fullName}</td>
       <td>${rating}</td>
+      <td style="color: ${aimRank.color}">${aimRank.name}</td>
       <td>${totalSolved}</td>
       ${solvedAnalyticsHTML}
     </tr>
@@ -129,38 +139,33 @@ const fetchInfo = (idx) =>
   setTimeout(
     () =>
       fetchJsonAndExec(
-        `https://codeforces.com/api/user.info?handles=${handles[idx]}`,
+        `https://codeforces.com/api/user.info?handles=${handles[idx].handle}`,
         ({ result: [{ firstName, lastName, rating, maxRating }] }) =>
           fetchJsonAndExec(
-            `https://codeforces.com/api/user.status?handle=${handles[idx]}`,
+            `https://codeforces.com/api/user.status?handle=${handles[idx].handle}`,
             ({ result }) => {
               result = result.filter(({ verdict }) => verdict === "OK");
               if (result.length > 0) {
                 const solvedByDifficulties = ranks.map(({ range }) =>
                   countSolvedInRange(result, range)
                 );
-                const fullName =
-                  firstName && lastName ? firstName + " " + lastName : "";
                 table.push({
-                  handle: handles[idx],
-                  fullName,
+                  handle: handles[idx].handle,
                   rating: rating || 0,
                   totalSolved: sum(solvedByDifficulties),
                   solvedByDifficulties,
                   html: toTableRow(
                     handles[idx],
-                    fullName,
                     rating || 0,
-                    maxRating || 1200,
+                    maxRating || 1400,
                     solvedByDifficulties
                   ),
                 });
               }
+              loader.remove();
+              drawTable();
               if (++idx < handles.length) {
                 fetchInfo(idx);
-              } else {
-                loader.remove();
-                drawTable();
               }
             }
           )
@@ -190,13 +195,6 @@ const handleButton = document.querySelector("#handle");
 handleButton.onclick = () => {
   const val = getAndChangeValue(handleButton);
   table.sort((user1, user2) => compare(user1.handle, user2.handle, val));
-  tbody.innerHTML = table.map(({ html }) => html).join("");
-};
-
-const fullNameButton = document.querySelector("#full-name");
-fullNameButton.onclick = () => {
-  const val = getAndChangeValue(fullNameButton);
-  table.sort((user1, user2) => compare(user1.fullName, user2.fullName, val));
   tbody.innerHTML = table.map(({ html }) => html).join("");
 };
 
