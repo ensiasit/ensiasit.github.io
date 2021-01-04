@@ -26,6 +26,8 @@ const handles = [
   { handle: "Mr.NickName" },
   { handle: "D_Mind" },
   { handle: "ensiast.aiming.4.expert", aimRating: 1600 },
+  { handle: "Kubernetes", aimRating: 1400 },
+  { handle: "afollous", aimRating: 1400 },
 ];
 
 const ranks = [
@@ -129,21 +131,19 @@ const countSolvedInRange = (submissions, range) =>
     ({ problem: { rating } }) => rating && inRange(range, rating)
   ).length;
 
-const fetchJsonAndExec = (url, callback) =>
-  fetch(url)
-    .then((res) => res.json())
-    .then(callback)
-    .catch((err) => console.log(err));
-
 const fetchInfo = (idx) =>
   setTimeout(
     () =>
-      fetchJsonAndExec(
-        `https://codeforces.com/api/user.info?handles=${handles[idx].handle}`,
-        ({ result: [{ firstName, lastName, rating, maxRating }] }) =>
-          fetchJsonAndExec(
-            `https://codeforces.com/api/user.status?handle=${handles[idx].handle}`,
-            ({ result }) => {
+      fetch(
+        `https://codeforces.com/api/user.info?handles=${handles[idx].handle}`
+      )
+        .then((res) => res.json())
+        .then(({ result: [{ rating, maxRating }] }) => {
+          fetch(
+            `https://codeforces.com/api/user.status?handle=${handles[idx].handle}`
+          )
+            .then((res) => res.json())
+            .then(({ result }) => {
               result = result.filter(({ verdict }) => verdict === "OK");
               if (result.length > 0) {
                 const solvedByDifficulties = ranks.map(({ range }) =>
@@ -167,9 +167,15 @@ const fetchInfo = (idx) =>
               if (++idx < handles.length) {
                 fetchInfo(idx);
               }
-            }
-          )
-      ),
+            })
+            .catch((err) => console.log(err));
+        })
+        .catch((err) => {
+          console.log(`No such handle: ${handles[idx].handle}`);
+          if (++idx < handles.length) {
+            fetchInfo(idx);
+          }
+        }),
     200
   );
 
