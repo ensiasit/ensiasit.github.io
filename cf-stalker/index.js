@@ -11,7 +11,6 @@ const handles = [
   { handle: "Saachi" },
   { handle: "sqrtminusone" },
   { handle: "TheMenTaLisT7" },
-  { handle: "hamzabht18" },
   { handle: "Lebannin" },
   { handle: "modx5" },
   { handle: "sato2000" },
@@ -21,13 +20,13 @@ const handles = [
   { handle: "Amee" },
   { handle: "Asaad27" },
   { handle: "Smahox" },
-  { handle: "titro" },
   { handle: "mosleh2020" },
   { handle: "Mr.NickName" },
   { handle: "D_Mind" },
   { handle: "ensiast.aiming.4.expert", aimRating: 1600 },
   { handle: "Kubernetes", aimRating: 1400 },
   { handle: "afollous", aimRating: 1400 },
+  { handle: "3aychinghayarakfahm", aimRating: 1400 },
 ];
 
 const ranks = [
