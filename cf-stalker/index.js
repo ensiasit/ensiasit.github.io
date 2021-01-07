@@ -176,7 +176,7 @@ const fetchInfo = (idx) =>
             fetchInfo(idx);
           }
         }),
-    200
+    300
   );
 
 const compare = (val1, val2, factor) => {
