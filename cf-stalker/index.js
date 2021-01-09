@@ -90,7 +90,13 @@ const getSolvedAnalytics = (rating, aimRank, solved) => {
   };
 };
 
-const toTableRow = ({ handle, aimRating }, rating, maxRating, solved) => {
+const toTableRow = (
+  { handle, aimRating },
+  isActive,
+  rating,
+  maxRating,
+  solved
+) => {
   var aimRank = ranks.find(({ range }) =>
     inRange(range, aimRating || maxRating)
   );
@@ -112,6 +118,9 @@ const toTableRow = ({ handle, aimRating }, rating, maxRating, solved) => {
     .join("");
   return `
     <tr>
+      <th style="color: ${isActive ? "green" : "gray"}">${
+    isActive ? "active" : "idle"
+  }</th>
       <th>
         <a style="color: ${color}" href="https://codeforces.com/profile/${handle}">
           ${handle}
@@ -148,13 +157,18 @@ const fetchInfo = (idx) =>
                 const solvedByDifficulties = ranks.map(({ range }) =>
                   countSolvedInRange(result, range)
                 );
+                const lastSubmissionSecs =
+                  new Date() / 1000 - result[0].creationTimeSeconds;
+                const isActive = lastSubmissionSecs <= 60 * 60 * 72;
                 table.push({
                   handle: handles[idx].handle,
+                  isActive,
                   rating: rating || 0,
                   totalSolved: sum(solvedByDifficulties),
                   solvedByDifficulties,
                   html: toTableRow(
                     handles[idx],
+                    isActive,
                     rating || 0,
                     maxRating || 1400,
                     solvedByDifficulties
@@ -169,7 +183,7 @@ const fetchInfo = (idx) =>
             })
             .catch((err) => console.log(err));
         })
-        .catch((err) => {
+        .catch(() => {
           console.log(`No such handle: ${handles[idx].handle}`);
           if (++idx < handles.length) {
             fetchInfo(idx);
@@ -178,7 +192,10 @@ const fetchInfo = (idx) =>
     300
   );
 
-const compare = (val1, val2, factor) => {
+const compare = (isActive1, isAtive2, val1, val2, factor) => {
+  if (isActive1 !== isAtive2) {
+    return isAtive2 - isActive1;
+  }
   if (isNaN(val1) || isNaN(val2)) {
     return factor * val1.toLowerCase().localeCompare(val2.toLowerCase());
   }
@@ -186,7 +203,9 @@ const compare = (val1, val2, factor) => {
 };
 
 const drawTable = () => {
-  table.sort((user1, user2) => compare(user1.rating, user2.rating, -1));
+  table.sort((user1, user2) =>
+    compare(user1.isActive, user2.isActive, user1.rating, user2.rating, -1)
+  );
   tbody.innerHTML = table.map(({ html }) => html).join("");
 };
 
@@ -199,14 +218,18 @@ const getAndChangeValue = (element) => {
 const handleButton = document.querySelector("#handle");
 handleButton.onclick = () => {
   const val = getAndChangeValue(handleButton);
-  table.sort((user1, user2) => compare(user1.handle, user2.handle, val));
+  table.sort((user1, user2) =>
+    compare(user1.isActive, user2.isActive, user1.handle, user2.handle, val)
+  );
   tbody.innerHTML = table.map(({ html }) => html).join("");
 };
 
 const ratingButton = document.querySelector("#rating");
 ratingButton.onclick = () => {
   const val = getAndChangeValue(ratingButton);
-  table.sort((user1, user2) => compare(user1.rating, user2.rating, val));
+  table.sort((user1, user2) =>
+    compare(user1.isActive, user2.isActive, user1.rating, user2.rating, val)
+  );
   tbody.innerHTML = table.map(({ html }) => html).join("");
 };
 
@@ -214,7 +237,13 @@ const totalSolvedButton = document.querySelector("#total-solved");
 totalSolvedButton.onclick = () => {
   const val = getAndChangeValue(totalSolvedButton);
   table.sort((user1, user2) =>
-    compare(user1.totalSolved, user2.totalSolved, val)
+    compare(
+      user1.isActive,
+      user2.isActive,
+      user1.totalSolved,
+      user2.totalSolved,
+      val
+    )
   );
   tbody.innerHTML = table.map(({ html }) => html).join("");
 };
@@ -223,7 +252,13 @@ const under1200Button = document.querySelector("#under-1200");
 under1200Button.onclick = () => {
   const val = getAndChangeValue(under1200Button);
   table.sort((user1, user2) =>
-    compare(user1.solvedByDifficulties[0], user2.solvedByDifficulties[0], val)
+    compare(
+      user1.isActive,
+      user2.isActive,
+      user1.solvedByDifficulties[0],
+      user2.solvedByDifficulties[0],
+      val
+    )
   );
   tbody.innerHTML = table.map(({ html }) => html).join("");
 };
@@ -232,7 +267,13 @@ const under1400Button = document.querySelector("#under-1400");
 under1400Button.onclick = () => {
   const val = getAndChangeValue(under1200Button);
   table.sort((user1, user2) =>
-    compare(user1.solvedByDifficulties[1], user2.solvedByDifficulties[1], val)
+    compare(
+      user1.isActive,
+      user2.isActive,
+      user1.solvedByDifficulties[1],
+      user2.solvedByDifficulties[1],
+      val
+    )
   );
   tbody.innerHTML = table.map(({ html }) => html).join("");
 };
@@ -241,7 +282,13 @@ const under1600Button = document.querySelector("#under-1600");
 under1600Button.onclick = () => {
   const val = getAndChangeValue(under1600Button);
   table.sort((user1, user2) =>
-    compare(user1.solvedByDifficulties[2], user2.solvedByDifficulties[2], val)
+    compare(
+      user1.isActive,
+      user2.isActive,
+      user1.solvedByDifficulties[2],
+      user2.solvedByDifficulties[2],
+      val
+    )
   );
   tbody.innerHTML = table.map(({ html }) => html).join("");
 };
@@ -250,7 +297,13 @@ const under1900Button = document.querySelector("#under-1900");
 under1900Button.onclick = () => {
   const val = getAndChangeValue(under1900Button);
   table.sort((user1, user2) =>
-    compare(user1.solvedByDifficulties[3], user2.solvedByDifficulties[3], val)
+    compare(
+      user1.isActive,
+      user2.isActive,
+      user1.solvedByDifficulties[3],
+      user2.solvedByDifficulties[3],
+      val
+    )
   );
   tbody.innerHTML = table.map(({ html }) => html).join("");
 };
@@ -259,7 +312,13 @@ const over1900Button = document.querySelector("#over-1900");
 over1900Button.onclick = () => {
   const val = getAndChangeValue(over1900Button);
   table.sort((user1, user2) =>
-    compare(user1.solvedByDifficulties[4], user2.solvedByDifficulties[4], val)
+    compare(
+      user1.isActive,
+      user2.isActive,
+      user1.solvedByDifficulties[4],
+      user2.solvedByDifficulties[4],
+      val
+    )
   );
   tbody.innerHTML = table.map(({ html }) => html).join("");
 };
