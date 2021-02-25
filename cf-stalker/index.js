@@ -23,6 +23,7 @@ const handles = [
   { handle: "mosleh2020" },
   { handle: "Mr.NickName" },
   { handle: "D_Mind" },
+  { handle: "thaScorpion" },
   { handle: "ensiast.aiming.4.expert", aimRating: 1600 },
   { handle: "Kubernetes", aimRating: 1400 },
   { handle: "afollous", aimRating: 1400 },
